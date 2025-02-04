@@ -1,361 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./Assests/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./Assests/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <div class="container">
-    <nav class="navbar">
+      <nav class="navbar">
         <div class="logo">
-            <p>Tripco</p>
+          <p>Tripco</p>
         </div>
         <div class="links">
-            <a href="#">Home</a>
-            <a href="#">Ticket</a>
-            <a href="#">Explore</a>
-            <a href="#">Activity</a>
+          <a href="#">Home</a>
+          <a href="#">Ticket</a>
+          <a href="#">Explore</a>
+          <a href="#">Activity</a>
         </div>
         <div class="buttons">
-            <a href="#" class="signin">Sign in</a>
-            <a href="#" class="signup">Sign up</a>
+          <a href="#" class="signin">Sign in</a>
+          <a href="#" class="signup">Sign up</a>
         </div>
-    </nav>
-        
-        <div class="Banner">
-            <img src="https://static.vecteezy.com/system/resources/previews/008/009/837/non_2x/outdoor-tourism-landscape-luxurious-beach-resort-with-swimming-pool-and-beach-chairs-or-loungers-umbrellas-with-palm-trees-and-blue-sky-sea-horizon-summer-island-relax-travel-and-idyllic-vacation-photo.jpg" alt="Banner Image">
-            
-            <div class="search-card">
-                <div class="tabs">
-                    <span class="active">Hostelry</span>
-                    <span>Flights</span>
-                    <span>Bus & Shuttle</span>
-                    <span>Cars</span>
-                </div>
-                
-                <div class="search-fields">
-                    <div class="field">
-                        <span>Destination</span>
-                        <p>📍 Bali, Indonesia</p>
-                    </div>
-                    <div class="field">
-                        <span>Check-in</span>
-                        <p>📅 Sat, 2 Dec 2022</p>
-                    </div>
-                    <div class="field">
-                        <span>Check-out</span>
-                        <p>📅 Sun, 3 Dec 2022</p>
-                    </div>
-                    <div class="field">
-                        <span>Room & Guest</span>
-                        <p>👤 1 Room, 2 Guest</p>
-                    </div>
-                    <button class="search-btn">🔍 Search</button>
-                </div>
-            </div>
-        </div>
+      </nav>
 
-    <section class="popular-places">
+      <div class="Banner">
+        <img
+          src="https://i.pinimg.com/736x/1f/08/72/1f0872641c255158c56625de56096661.jpg"
+          alt="Banner Image"
+        />
+        <div class="banner-heading">
+          <h3>Explore the whole world</h3>
+          <h3>and enjoy its beauty</h3>
+        </div>
+        <div class="banner-subheading">
+          <p>Find and write your experience around the world</p>
+        </div>
+        <div class="search-card">
+          <div class="tabs">
+            <span class="active">Hostelry</span>
+            <span>Flights</span>
+            <span>Bus & Shuttle</span>
+            <span>Cars</span>
+          </div>
+
+          <div class="search-fields">
+            <div class="field">
+              <span>Destination</span>
+              <select>
+                <option value="bali">Bali, Indonesia</option>
+                <option value="paris">Paris, France</option>
+                <option value="tokyo">Tokyo, Japan</option>
+              </select>
+            </div>
+            <div class="field">
+              <span>Check-in</span>
+              <input type="date" />
+            </div>
+            <div class="field">
+              <span>Check-out</span>
+              <input type="date" />
+            </div>
+            <div class="field">
+              <span>Room & Guest</span>
+              <select>
+                <option value="1-room-2-guests">1 Room, 2 Guests</option>
+                <option value="1-room-3-guests">1 Room, 3 Guests</option>
+                <option value="2-rooms-4-guests">2 Rooms, 4 Guests</option>
+              </select>
+            </div>
+            <button class="search-btn">🔍 Search</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="popular-places">
         <div class="header-container">
-            <div class="header">
-                <h1>Popular Place</h1>
-                <p>Lets enjoy this heaven on earth</p>
-            </div>
-            <div class = "discription">
-                <p>Many places are famous , beautiful ,clean and will give a very </p>
-                <p>deep impression to visitors and will make them come back.</p>
-            </div>
+          <div class="header">
+            <h1>Popular Place</h1>
+            <p>Lets enjoy this heaven on earth</p>
+          </div>
+          <div class="discription">
+            <p>
+              Many places are famous , beautiful ,clean and will give a very
+            </p>
+            <p>deep impression to visitors and will make them come back.</p>
+          </div>
         </div>
 
         <div class="places-container">
-            <div class="place-card">
-                <div class="image-container">
-                    <img src="./Assests/place.jpeg" alt="">
-                    <span class="discount"> 20% off</span>
-                </div>
-                <h3>SC. Mindanou</h3>
-                <div class="location">
-                    <img src="./Assests/icons8-location-pin-40.png" alt="">
-                    <p >Mindanou, Philippines</p>
-                </div>
+          <div class="place-card">
+            <div class="image-container">
+              <img src="./Assests/mindanou.jpeg" alt="" />
+              <span class="discount"> 20% off</span>
             </div>
+            <h3>SC. Mindanou</h3>
+            <div class="location">
+              <img src="./Assests/icons8-location-pin-40.png" alt="" />
+              <p>Mindanou, Philippines</p>
+            </div>
+          </div>
 
-            <div class="place-card">
-                <div class="image-container">
-                    <img src="./Assests/place.jpeg" alt="">
-                    <span class="discount"> 20% off</span>
-                </div>
-                <h3>Disneyland Tokyo</h3>
-                <div class="location">
-                    <img src="./Assests/icons8-location-pin-40.png" alt="">
-                    <p >Tokyo, Japan</p>
-                </div>
+          <div class="place-card">
+            <div class="image-container">
+              <img src="./Assests/disney.jpg" alt="" />
+              <span class="discount"> 20% off</span>
             </div>
-            <div class="place-card">
-                <div class="image-container">
-                    <img src="./Assests/place.jpeg" alt="">
-                    <span class="discount"> 20% off</span>
-                </div>
-                <h3>Tousand Island</h3>
-                <div class="location">
-                    <img src="./Assests/icons8-location-pin-40.png" alt="">
-                    <p >Java, Indonesia</p>
-                </div>
+            <h3>Disneyland Tokyo</h3>
+            <div class="location">
+              <img src="./Assests/icons8-location-pin-40.png" alt="" />
+              <p>Tokyo, Japan</p>
             </div>
-            <div class="place-card">
-                <div class="image-container">
-                    <img src="./Assests/place.jpeg" alt="">
-                    <span class="discount"> 20% off</span>
-                </div>
-                <h3>Basilika Santo</h3>
-                <div class="location">
-                    <img src="./Assests/icons8-location-pin-40.png" alt="">
-                    <p >Venice, Itlay</p>
-                </div>
+          </div>
+          <div class="place-card">
+            <div class="image-container">
+              <img src="./Assests/tousand.jpeg" alt="" />
+              <span class="discount"> 20% off</span>
             </div>
+            <h3>Tousand Island</h3>
+            <div class="location">
+              <img src="./Assests/icons8-location-pin-40.png" alt="" />
+              <p>Java, Indonesia</p>
+            </div>
+          </div>
+          <div class="place-card">
+            <div class="image-container">
+              <img src="./Assests/santo.jpeg" alt="" />
+              <span class="discount"> 20% off</span>
+            </div>
+            <h3>Basilika Santo</h3>
+            <div class="location">
+              <img src="./Assests/icons8-location-pin-40.png" alt="" />
+              <p>Venice, Itlay</p>
+            </div>
+          </div>
         </div>
-    </section>
-    <h1 class="travel-heading">Travel to make sweet memories</h1>
-    <p class="subtitle">Find trips that fit a flexible lifestyle</p>
-    <section class="travel-section">
+      </section>
+      <h1 class="travel-heading">Travel to make sweet memories</h1>
+      <p class="subtitle">Find trips that fit a flexible lifestyle</p>
+      <section class="travel-section">
         <div class="text-content">
-            <div class="feature">
-                <span class="number blue">01</span>
-                <div class="feature-text">
-                    <h3>Find trips that fit your freedom</h3>
-                    <p>Travelling offers freedom and flexibility, solitude and spontaneity, and privacy and purpose.</p>
-                </div>
+          <div class="feature">
+            <span class="number blue">01</span>
+            <div class="feature-text">
+              <h3>Find trips that fit your freedom</h3>
+              <p>
+                Travelling offers freedom and flexibility, solitude and
+                spontaneity, and privacy and purpose.
+              </p>
             </div>
+          </div>
 
-            <div class="feature">
-                <span class="number purple">02</span>
-                <div class="feature-text">
-                    <h3>Get back to nature by travel</h3>
-                    <p>The world is a playground and you can finally explore Mother Nature’s inimitable canvas.</p>
-                </div>
+          <div class="feature">
+            <span class="number purple">02</span>
+            <div class="feature-text">
+              <h3>Get back to nature by travel</h3>
+              <p>
+                The world is a playground and you can finally explore Mother
+                Nature’s inimitable canvas.
+              </p>
             </div>
+          </div>
 
-            <div class="feature">
-                <span class="number green">03</span>
-                <div class="feature-text">
-                    <h3>Reignite those travel tastebuds</h3>
-                    <p>There are infinite reasons to love travel, one of them being the food, glorious food.</p>
-                </div>
+          <div class="feature">
+            <span class="number green">03</span>
+            <div class="feature-text">
+              <h3>Reignite those travel tastebuds</h3>
+              <p>
+                There are infinite reasons to love travel, one of them being the
+                food, glorious food.
+              </p>
             </div>
+          </div>
 
-            <button class="explore-btn">Start your explore</button>
+          <button class="explore-btn">Start your explore</button>
         </div>
 
         <div class="imagecontainer">
-            <img src="./Assests/mountain.jpg" alt="Mountain Travel">
-            <div class="review review1">
-                <img id="test" src="./Assests/review1.png" alt="User 1">
-                <p>Kamella Diana<br>⭐ 4.9</p>
-            </div>
+          <img src="./Assests/mountain.jpg" alt="Mountain Travel" />
+          <div class="review review1">
+            <img id="test" src="./Assests/women1.jpeg" alt="User 1" />
+            <p>Kamella Diana<br />⭐ 4.9</p>
+          </div>
 
-            <div class="review review2">
-                <img src="./Assests/review1.png" alt="User 2">
-                <p>Haikal Adam<br>⭐ 4.9</p>
-            </div>
+          <div class="review review2">
+            <img src="./Assests/man1.jpeg" alt="User 2" />
+            <p>Haikal Adam<br />⭐ 4.9</p>
+          </div>
 
-            <div class="review review3">
-                <img src="./Assests/review1.png" alt="User 3">
-                <p>Joe Zefrano<br>⭐ 4.9</p>
-            </div>
+          <div class="review review3">
+            <img src="./Assests/man2.jpeg" alt="User 3" />
+            <p>Joe Zefrano<br />⭐ 4.9</p>
+          </div>
         </div>
-    </section>
-    <section class="explore-section">
+      </section>
+      <section class="explore-section">
         <div class="header-container">
-            <div class="header">
-                <h1>Explore more</h1>
-                <p>Let's go on an adventure</p>
-            </div>
-            <div class="description">
-                <p class="">
-                All-inclusive vacations and flights to the Caribbean,</p>
-                <p>Indonesia, and more than 1,300 destinations worldwide. Let’s explore now.</p>
-            </div>
+          <div class="header">
+            <h1>Explore more</h1>
+            <p>Let's go on an adventure</p>
+          </div>
+          <div class="description">
+            <p class="">
+              All-inclusive vacations and flights to the Caribbean,
+            </p>
+            <p>
+              Indonesia, and more than 1,300 destinations worldwide. Let’s
+              explore now.
+            </p>
+          </div>
         </div>
 
         <div class="filters">
-            <button class="filter active">Popular destination</button>
-            <button class="filter">Islands</button>
-            <button class="filter">Surfing</button>
-            <button class="filter">Nation parks</button>
-            <button class="filter">Lake</button>
-            <button class="filter">Beach</button>
-            <button class="filter">Camp</button>
-            <button class="filter filter-icon">Filters ☰</button>
+          <button class="filter active">Popular destination</button>
+          <button class="filter">Islands</button>
+          <button class="filter">Surfing</button>
+          <button class="filter">Nation parks</button>
+          <button class="filter">Lake</button>
+          <button class="filter">Beach</button>
+          <button class="filter">Camp</button>
+          <button class="filter filter-icon">Filters ☰</button>
         </div>
 
         <div class="destination-grid">
-            <div class="destination-card">
-                <img src="./Assests//taj_mahal.jpeg" alt="Amalfi Coast">
-                <div class="card-content">
-                    <h3>Amalfi Coast</h3>
-                    <div class="location-price">
-                        <p class="location">🌍 Amalfi, Italy</p>
-                        <p class="price">$148/Pax</p>
-                    </div>
-                    <span class="rating">⭐ 4.9</span>
+          <div class="destination-card">
+            <img src="./Assests/amalfi.jpeg" alt="Amalfi Coast" />
+            <div class="test">
+              <div class="card-content">
+                <h3>Amalfi Coast</h3>
+                <div class="location-price">
+                  <span class="location">🌍 Amalfi, Italy</span>
                 </div>
-                
+                <span class="rating">⭐ 4.9</span>
+              </div>
+              <p class="price">$148/Pax</p>
             </div>
+          </div>
 
-            <div class="destination-card">
-                <img src="./Assests//taj_mahal.jpeg" alt="Taj Mahal">
-                <div class="card-content">
-                    <h3>Taj Mahal</h3>
-                    <div class="location-price">
-                        <p class="location">🌍 Agra , India</p>
-                        <p class="price">$140/Pax</p>
-                    </div>
-                    <span class="rating">⭐ 4.9</span>
+          <div class="destination-card">
+            <img src="./Assests/taj_mahal.webp" alt="Amalfi Coast" />
+            <div class="test">
+              <div class="card-content">
+                <h3>Taj Mahal</h3>
+                <div class="location-price">
+                  <span class="location">🌍 Agra, India</span>
                 </div>
+                <span class="rating">⭐ 4.9</span>
+              </div>
+              <p class="price">$140/Pax</p>
             </div>
+          </div>
 
-            <div class="destination-card">
-                <img src="./Assests//hotairBaloon.jpeg" alt="Tanah Gajah">
-                <div class="card-content">
-                    <h3>Tanah Gajah</h3>
-                    <div class="location-price">
-                        <p class="location">Bali, Indonesia </p>
-                        <p class="price">$148/Pax</p>
-                    </div>
-                    <span class="rating">⭐ 4.9</span>
+          <div class="destination-card">
+            <img src="./Assests/tanah.jpeg" alt="Amalfi Coast" />
+            <div class="test">
+              <div class="card-content">
+                <h3>Tanah Gajah</h3>
+                <div class="location-price">
+                  <span class="location">🌍 Bali,Indonesia</span>
                 </div>
+                <span class="rating">⭐ 4.9</span>
+              </div>
+              <p class="price">$148/Pax</p>
             </div>
+          </div>
 
-            <div class="destination-card">
-                <img src="./Assests//taj_mahal.jpeg" alt="Osaka Castle">
-                <div class="card-content">
-                    <h3>Osaka Castle</h3>
-                    <div class="location-price">
-                        <p class="location">Osaka, japan</p>
-                        <p class="price">$156/Pax</p>
-                    </div>
-                    <span class="rating">⭐ 4.9</span>
+          <div class="destination-card">
+            <img src="./Assests/osaka.webp" alt="Amalfi Coast" />
+            <div class="test">
+              <div class="card-content">
+                <h3>Osaka Castle</h3>
+                <div class="location-price">
+                  <span class="location">🌍 Osaka, Japan</span>
                 </div>
+                <span class="rating">⭐ 4.9</span>
+              </div>
+              <p class="price">$156/Pax</p>
             </div>
-
-            <div class="destination-card">
-                <img src="./Assests//taj_mahal.jpeg" alt="Cape Reinga">
-                <div class="card-content">
-                    <h3>Cope Reinga</h3>
-                    <div class="location-price">
-                        <p class="location">Northland, New Zealand</p>
-                        <p class="price">$164/Pax</p>
-                    </div>
-                    <span class="rating">⭐ 4.9</span>
+          </div>
+          <div class="destination-card">
+            <img src="./Assests/cope_reinga.jpeg" alt="Amalfi Coast" />
+            <div class="test">
+              <div class="card-content">
+                <h3>Cope Reigna</h3>
+                <div class="location-price">
+                  <span class="location">🌍 Northland, New Zealand</span>
                 </div>
+                <span class="rating">⭐ 4.9</span>
+              </div>
+              <p class="price">$164/Pax</p>
             </div>
+          </div>
 
-            <div class="destination-card">
-                <img src="./Assests//taj_mahal.jpeg" alt="Sorrento, Italy">
-                <div class="card-content">
-                    <h3>Sorrento, Italy</h3>
-                    <div class="location-price">
-                        <p class="location">Amfali, Itlay</p>
-                        <p class="price">$172/Pax</p>
-                    </div>
-                    <span class="rating">⭐ 4.9</span>
+          <div class="destination-card">
+            <img src="./Assests/sorrento.jpeg" alt="Amalfi Coast" />
+            <div class="test">
+              <div class="card-content">
+                <h3>Sorrento, Itlay</h3>
+                <div class="location-price">
+                  <span class="location">🌍 Amalfi, Italy</span>
                 </div>
+                <span class="rating">⭐ 4.9</span>
+              </div>
+              <p class="price">$172/Pax</p>
             </div>
-        </div>
-
+          </div>
         <button class="show-more">Show more</button>
-
-    </section>
-    <section>
+      </section>
+      <section class="adventure">
         <div class="header-container">
-            <div class="header_1">
-                <h1>Let's go on an adventure</h1>
-                <p>Find and book a great experience </p>
-            </div>
+          <div class="header_1">
+            <h1>Let's go on an adventure</h1>
+            <p>Find and book a great experience</p>
+          </div>
         </div>
         <div class="stamp-container">
             <div class="stamp-cards">
-                <img src="./Assests/stamp.png" alt="stamp">
+                <div class="small-photo">
+                  <img src="./Assests/plane.jpeg" alt="small photo" />
+                </div>
+                <img src="./Assests/paris.webp" alt="stamp" />
                 <p>Paris</p>
-            </div>
-            <div class="stamp-cards">
-                <img src="./Assests/stamp.png" alt="stamp">
-                <p>New York</p>
-            </div>
-            <div class="stamp-cards">
-                <img src="./Assests/stamp.png" alt="stamp">
-                <p>Seoul</p>
-            </div>
-            <div class="stamp-cards">
-                <img src="./Assests/stamp.png" alt="stamp">
-                <p>Bali</p>
-            </div>
+              </div>              
+          <div class="stamp-cards">
+            <div class="small-photo">
+                <img src="./Assests/plane.jpeg" alt="small photo" />
+              </div>
+            <img src="./Assests/newyork.webp" alt="stamp" />
+            <p>New York</p>
+          </div>
+          <div class="stamp-cards">
+            <div class="small-photo">
+                <img src="./Assests/plane.jpeg" alt="small photo" />
+              </div>
+            <img src="./Assests/seoul.jpg" alt="stamp" />
+            <p>Seoul</p>
+          </div>
+          <div class="stamp-cards">
+            <div class="small-photo">
+                <img src="./Assests/plane.jpeg" alt="small photo" />
+              </div>
+            <img src="./Assests/bali.webp" alt="stamp" />
+            <p>Bali</p>
+          </div>
         </div>
-    </section>
-    <div class="booking-section">
+      </section>
+      <div class="booking-section">
         <p class="booking-title">Book tickets and go now!</p>
         <button class="book-btn">Book now</button>
-    </div>
+      </div>
 
-    <div class="video-container">
+      <div class="video-container">
         <video id="video" controls="false">
-            <source src="./Assests/video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+          <source src="./Assests/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
         </video>
         <div class="play-button"></div>
-    </div>
-    <footer>
+      </div>
+      <footer>
         <div class="footer-container">
             <div class="footer-section">
                 <h4 class="logo">Tripco</h4>
                 <p>30 Great Peter St. Westminister,</p>
-                <p>London SWP 28U, United Kingdom </p>
-            </div>
-    
-            <div class="footer-section">
-                <h4>About</h4>
-                <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Plans</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="#">Why Tripco</a></li>
-                    <li><a href="#">Partner With Us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Support</h4>
-                <ul>
-                    <li><a href="#">Account</a></li>
-                    <li><a href="#">Support Center</a></li>
-                    <li><a href="#">Feedback</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Newsletter</h4>
-                <p>Subscribe to our newsletter and get exciting offers</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit">
-                        <img src="./Assests/icons8-send-50.png" alt="Subscribe">
-                    </button>
-                </form>
-            </div>                  
+                <p>London SWP 28U, United Kingdom</p>
+                <div class="footer-icons">
+                  <a href="#" class="icon-f"><img src="./Assests/icons8-facebook-logo-50.png" alt="Facebook" /></a>
+                  <a href="#" class="icon-i"><img src="./Assests/icons8-instagram-40.png" alt="Instagram" /></a>
+                  <a href="#" class="icon-i"><img src="./Assests/icons8-youtube-48.png" alt="Instagram" /></a>
+
+                </div>
+              </div>
+              
+
+          <div class="footer-section">
+            <h4>About</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Plans</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">Why Tripco</a></li>
+              <li><a href="#">Partner With Us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Support Center</a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Newsletter</h4>
+            <p>Subscribe to our newsletter and get exciting offers</p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+              />
+              <button type="submit">
+                <img src="./Assests/icons8-send-50.png" alt="Subscribe" />
+              </button>
+            </form>
+          </div>
         </div>
-    </footer>
+      </footer>
     </div>
-
-
-    
-</body>
+  </body>
 </html>
