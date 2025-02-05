@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./Assests/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js"></script>
   </head>
   <body>
     <div class="container">
@@ -13,12 +17,23 @@
         <div class="logo">
           <p>Tripco</p>
         </div>
+      
+        <!-- Hamburger menu icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      
+        <!-- Links (initially hidden on small screens) -->
         <div class="links">
           <a href="#">Home</a>
           <a href="#">Ticket</a>
           <a href="#">Explore</a>
           <a href="#">Activity</a>
         </div>
+      
+        <!-- Buttons (initially hidden on small screens) -->
         <div class="buttons">
           <a href="#" class="signin">Sign in</a>
           <a href="#" class="signup">Sign up</a>
@@ -38,11 +53,16 @@
           <p>Find and write your experience around the world</p>
         </div>
         <div class="search-card">
-          <div class="tabs">
-            <span class="active">Hostelry</span>
-            <span>Flights</span>
-            <span>Bus & Shuttle</span>
-            <span>Cars</span>
+          <div class="tabss">
+            <div class="tabs">
+              <span class="active">Hostelry</span>
+              <span class="active">Flights</span>
+              <span class="active">Bus & Shuttle</span>
+              <span class="active">Cars</span>
+            </div>
+            <div class="tabs-search">
+              <span class="active">Last Searching ></span>
+            </div>
           </div>
 
           <div class="search-fields">
@@ -203,26 +223,27 @@
           </div>
           <div class="description">
             <p class="">
-              All-inclusive vacations and flights to the Caribbean,
+              All-inclusive vacations and flights to the Caribbean, Indonesia
+              and
             </p>
-            <p>
-              Indonesia, and more than 1,300 destinations worldwide. Let’s
-              explore now.
-            </p>
+            <p>more than 1,300 destinations worldwide. Let’s explore now.</p>
           </div>
         </div>
 
-        <div class="filters">
-          <button class="filter active">Popular destination</button>
-          <button class="filter">Islands</button>
-          <button class="filter">Surfing</button>
-          <button class="filter">Nation parks</button>
-          <button class="filter">Lake</button>
-          <button class="filter">Beach</button>
-          <button class="filter">Camp</button>
-          <button class="filter filter-icon">Filters ☰</button>
+        <div class="filterss">
+          <div class="filters">
+            <button class="filter active">Popular destination</button>
+            <button class="filter">Islands</button>
+            <button class="filter">Surfing</button>
+            <button class="filter">Nation parks</button>
+            <button class="filter">Lake</button>
+            <button class="filter">Beach</button>
+            <button class="filter">Camp</button>
+          </div>
+          <div class="">
+            <button class="filter filter-icon">Filters</button>
+          </div>
         </div>
-
         <div class="destination-grid">
           <div class="destination-card">
             <img src="./Assests/amalfi.jpeg" alt="Amalfi Coast" />
@@ -306,8 +327,9 @@
               <p class="price">$172/Pax</p>
             </div>
           </div>
-        <div></div>
-        <button class="show-more">Show more</button>
+          <div class="show-more-btn">
+            <button class="show-more">Show more</button>
+          </div>
         </div>
       </section>
       <section class="adventure">
@@ -318,31 +340,31 @@
           </div>
         </div>
         <div class="stamp-container">
-            <div class="stamp-cards">
-                <div class="small-photo">
-                  <img src="./Assests/plane.jpeg" alt="small photo" />
-                </div>
-                <img src="./Assests/paris.webp" alt="stamp" />
-                <p>Paris</p>
-              </div>              
           <div class="stamp-cards">
             <div class="small-photo">
-                <img src="./Assests/plane.jpeg" alt="small photo" />
-              </div>
+              <img src="./Assests/plane.jpeg" alt="small photo" />
+            </div>
+            <img src="./Assests/paris.webp" alt="stamp" />
+            <p>Paris</p>
+          </div>
+          <div class="stamp-cards">
+            <div class="small-photo">
+              <img src="./Assests/plane.jpeg" alt="small photo" />
+            </div>
             <img src="./Assests/newyork.webp" alt="stamp" />
             <p>New York</p>
           </div>
           <div class="stamp-cards">
             <div class="small-photo">
-                <img src="./Assests/plane.jpeg" alt="small photo" />
-              </div>
+              <img src="./Assests/plane.jpeg" alt="small photo" />
+            </div>
             <img src="./Assests/seoul.jpg" alt="stamp" />
             <p>Seoul</p>
           </div>
           <div class="stamp-cards">
             <div class="small-photo">
-                <img src="./Assests/plane.jpeg" alt="small photo" />
-              </div>
+              <img src="./Assests/plane.jpeg" alt="small photo" />
+            </div>
             <img src="./Assests/bali.webp" alt="stamp" />
             <p>Bali</p>
           </div>
@@ -362,18 +384,24 @@
       </div>
       <footer>
         <div class="footer-container">
-            <div class="footer-section">
-                <h4 class="logo">Tripco</h4>
-                <p>30 Great Peter St. Westminister,</p>
-                <p>London SWP 28U, United Kingdom</p>
-                <div class="footer-icons">
-                  <a href="#" class="icon-f"><img src="./Assests/icons8-facebook-logo-50.png" alt="Facebook" /></a>
-                  <a href="#" class="icon-i"><img src="./Assests/icons8-instagram-40.png" alt="Instagram" /></a>
-                  <a href="#" class="icon-i"><img src="./Assests/icons8-youtube-48.png" alt="Instagram" /></a>
-
-                </div>
-              </div>
-              
+          <div class="footer-section">
+            <h4 class="logo">Tripco</h4>
+            <p>30 Great Peter St. Westminister,</p>
+            <p>London SWP 28U, United Kingdom</p>
+            <div class="footer-icons">
+              <a href="#" class="icon"
+                ><img src="./Assests/icons8-instagram-40.png" alt="Instagram"
+              /></a>
+              <a href="#" class="icon"
+                ><img
+                  src="./Assests/icons8-facebook-logo-50.png"
+                  alt="Facebook"
+              /></a>
+              <a href="#" class="icon"
+                ><img src="./Assests/icons8-youtube-48.png" alt="Instagram"
+              /></a>
+            </div>
+          </div>
 
           <div class="footer-section">
             <h4>About</h4>
