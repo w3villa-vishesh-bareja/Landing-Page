@@ -35,7 +35,7 @@
   display: flex;
   gap: 40px;
   align-items: center;
-  margin-left: 20px;
+  margin-left: -250px;
 }
 
 .links a:hover {
@@ -897,6 +897,10 @@ footer {
 }
 
 @media (max-width: 1250px) {
+  .links{
+    margin-left: -30px;
+  }
+  
   .Banner {
     height: 80vh;
   }
@@ -980,39 +984,37 @@ footer {
     margin-bottom: 30px;
   }
   .imagecontainer {
-    width: 400px; /* Reduce the width of the container */
+    width: 400px;
   }
 
   .imagecontainer img {
-    height: 700px; /* Reduce the height of the image */
+    height: 700px;
   }
 
   .review {
-    padding: 6px 15px; /* Adjust padding for smaller reviews */
-    font-size: 1rem; /* Smaller font size */
+    padding: 6px 15px;
+    font-size: 1rem;
   }
 
-  /* Adjust the position of the reviews */
   .review1 {
-    top: 15%; /* Adjust review1's position */
-    left: -80px; /* Move review1 closer to the left */
+    top: 15%; 
+    left: -80px; 
   }
 
   .review2 {
-    top: 45%; /* Adjust review2's position */
-    right: -50px; /* Move review2 closer to the right */
+    top: 45%; 
+    right: -50px; 
   }
 
   .review3 {
-    bottom: 15%; /* Adjust review3's position */
-    left: -80px; /* Move review3 closer to the left */
+    bottom: 15%; 
+    left: -80px; 
   }
 
   .review img {
-    width: 40px; /* Reduce image size */
-    height: 40px; /* Reduce image size */
-    margin-right: 12px; /* Adjust margin for smaller images */
-  }
+    width: 40px; 
+    height: 40px; 
+    margin-right: 12px; 
   .destination-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1041,14 +1043,34 @@ footer {
     font-weight: 600;
     margin-bottom: 15px;
   }
+  .destination-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+  }
 
-}
 
 @media (max-width : 920px) {
   /* .navbar {
     display: none;
   } */
+  .destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+  .links a{
+    font-size: 1.4rem;
+  }
+  .signin{
+    font-size: 1.4rem;
+  }
+  .signup{
+  padding: 8px 10px;
+  font-size: 1.4rem;
+  text-align: center;
 
+  }
   .field span {
     font-size: 1rem;
   }
@@ -1104,38 +1126,35 @@ footer {
     height: 500px;
   }
   .travel-section{
-    /* justify-content: center ; */
     align-items: start;
     width: 95%;
     
   }
   .review {
-    padding: 6px 5px; /* Adjust padding for smaller reviews */
+    padding: 6px 5px; 
     font-size: 0.8rem;
     gap: 0;
-     /* Smaller font size */
   }
 
-  /* Adjust the position of the reviews */
   .review1 {
-    top: 15%; /* Adjust review1's position */
-    left: -80px; /* Move review1 closer to the left */
+    top: 15%; 
+    left: -80px; 
   }
 
   .review2 {
-    top: 45%; /* Adjust review2's position */
-    right: -30px; /* Move review2 closer to the right */
+    top: 45%;
+    right: -30px;
   }
 
   .review3 {
-    bottom: 15%; /* Adjust review3's position */
-    left: -80px; /* Move review3 closer to the left */
+    bottom: 15%; 
+    left: -80px; 
   }
 
   .review img {
-    width: 30px; /* Reduce image size */
-    height: 30px; /* Reduce image size */
-    margin-right: 18px; /* Adjust margin for smaller images */
+    width: 30px; 
+    height: 30px; 
+    margin-right: 18px; 
   }
   .feature-text h3 {
     font-size: 1rem;
@@ -1159,40 +1178,44 @@ footer {
   }
 
 
+
 }
 
 @media (max-width: 768px) {
   .container {
     margin: 15px;
   }
+  .Banner{
+    margin: 0;
+  }
   .navbar {
     padding: 10px 15px;
     font-size: 1.3rem;
-    flex-direction: column; /* Stack navbar items vertically */
-    align-items: flex-start; /* Align items to the left */
-    position: relative; /* Needed for the hamburger menu */
+    flex-direction: column; 
+    align-items: flex-start; 
+    position: relative; 
   }
 
-  /* Logo stays intact */
+
   .logo {
-    font-size: 1.8rem; /* Adjust logo size */
-    margin-bottom: 10px; /* Add margin below the logo */
-    text-align: left; /* Keep the logo aligned left */
+    font-size: 1.8rem; 
+    margin-bottom: 10px; 
+    text-align: left; 
   }
 
-  /* Links adjustments - initially hidden on small screens */
+  
   .links {
-    display: none; /* Hide links by default on small screens */
+    display: none; 
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    background-color: white; /* Background for dropdown */
+    background-color: white;
     position: absolute;
-    top: 50px; /* Adjust position relative to navbar */
+    top: 50px; 
     left: 0;
     padding: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000; 
   }
 
   .links a {
@@ -1201,7 +1224,7 @@ footer {
     padding: 10px 15px;
     display: block;
     width: 100%;
-    text-align: left; /* Align text to the left */
+    text-align: left; 
   }
 
   .links a:hover {
@@ -1209,9 +1232,9 @@ footer {
     font-weight: bold;
   }
 
-  /* Buttons adjustments - also hidden initially */
+
   .buttons {
-    display: none; /* Hide buttons by default */
+    display: none; 
     flex-direction: column;
     gap: 15px;
     align-items: center;
@@ -1222,10 +1245,10 @@ footer {
     padding: 8px 20px;
     gap: 10px;
     width: 100%;
-    text-align: center; /* Center align buttons */
+    text-align: center; 
   }
 
-  /* Hamburger menu icon */
+
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -1243,13 +1266,12 @@ footer {
     background-color: gray;
   }
 
-  /* Show links and buttons when hamburger is clicked */
   .hamburger.active + .links {
-    display: flex; /* Show links */
+    display: flex; 
   }
 
   .hamburger.active + .links + .buttons {
-    display: flex; /* Show buttons */
+    display: flex; 
   }
 
   .Banner {
@@ -1456,7 +1478,7 @@ footer {
     margin-bottom: 10px;
   }
   .show-more-btn{
-    
+
   }
   
 }
