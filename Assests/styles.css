@@ -2,6 +2,7 @@
   font-family: 'Roboto';
   padding: 0;
   margin: 0;
+  /* outline: 1px solid red; */
 }
 
 .navbar {
@@ -89,7 +90,7 @@ p {
 }
 
 .container {
-  position: relative;
+  /* position: relative; */
   margin-left: 55px;
   margin-right: 55px;
   /* max-width: 1800px; */
@@ -114,7 +115,6 @@ p {
   width: 100%;
   height: 76vh;
   border-radius: 40px;
-  /* object-fit: cover;  */
 }
 
 .banner-heading,
@@ -208,7 +208,7 @@ p {
 
 .search-fields {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 15px;
@@ -241,15 +241,18 @@ p {
 
 .search-btn {
   background: #00bcd4;
-  color: white;
   padding: 12px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1.5rem;
   width: 15%;
-  align-self: end;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+.search-btn button{
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
 }
 
 .header-container {
@@ -904,26 +907,75 @@ footer {
   .Banner {
     height: 80vh;
   }
+  .banner-heading{
+    top:30%;
+  }
 
   .banner-heading h3 {
-    font-size: 4.5vw;
+    font-size: 3.5vw;
   }
 
   .banner-subheading p {
     font-size: 1.8vw;
   }
-
+  .tabss{
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+  }
   .tabs span {
     font-size: 1.2rem;
+    margin-bottom: 0px;
   }
 
   .tabs-search {
     display: none;
   }
-
+  .search-card{
+    padding: 20px;
+    gap:10px;
+  }
   .search-fields {
     gap: 2px;
-    justify-content: center;
+    /* justify-content: center; */
+    padding: 5px;
+  }
+  .field{
+    padding: 5px;
+    max-width: 250px;
+    width: fit-content;
+    /* flex-wrap: nowrap; */
+  }
+  .search-btn{
+    margin-bottom: 0px;
+    margin-right: 1.9vw;
+  }
+  .search-btn button{
+    font-size: 1rem; 
+  }
+  .field select, .field input {
+    width: 80%;
+    padding: 10px 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f7f7f7;
+    margin-top: 5px;
+  } 
+  .field span{
+    font-size: 1rem;
+    padding-bottom: 0px;
+  }
+  .Banner{
+    margin-top: 20px;
+  }
+  .signin{
+    font-size: 1.2rem;
+  }
+  .signup{
+    font-size: 1.2rem;
+  }
+  .links a{
+    font-size: 1.2rem;
   }
   .explore-section{
     padding-top: 10px;
@@ -936,7 +988,12 @@ footer {
     font-size: 2rem;
     margin-bottom: 10px;
   }
-
+  .header_1 h1{
+    font-size: 2rem;
+  }
+  .header_1 p{
+    font-size: 1.2rem;
+  }
   .header p {
     font-size: 1.2rem;
     color: #777;
@@ -992,12 +1049,14 @@ footer {
   }
 
   .review {
-    padding: 6px 15px;
+    padding: 6px 10px;
     font-size: 1rem;
+    font-weight:lighter;
+    font-size: 0.9rem;
   }
 
   .review1 {
-    top: 15%; 
+    top: 18%; 
     left: -80px; 
   }
 
@@ -1014,7 +1073,8 @@ footer {
   .review img {
     width: 40px; 
     height: 40px; 
-    margin-right: 12px; 
+    margin-right: 8px; 
+  }
   .destination-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1046,6 +1106,26 @@ footer {
   .destination-grid{
     grid-template-columns: repeat(2,1fr);
   }
+  .stamp-cards{
+    width: 200px;
+    height: auto;
+   }
+   .stamp-cards img{
+    height: 200px;
+   }
+   .stamp-cards .small-photo{
+    top:-30px;
+    left:-30px;
+    width: 70px;
+    height: 70px;
+
+   }
+   .stamp-cards p{
+    font-size: 1.2rem;
+   }
+   .stamp-container{
+    margin-bottom: 50px;
+   }
   }
 
 
@@ -1060,14 +1140,14 @@ footer {
     border-radius: 20px;
 }
   .links a{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .signin{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .signup{
   padding: 8px 10px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: center;
 
   }
@@ -1186,7 +1266,11 @@ footer {
     margin: 15px;
   }
   .Banner{
-    margin: 0;
+    margin-top: 10px;
+    align-items: start;
+  }
+  .banner-heading h3{
+
   }
   .navbar {
     padding: 10px 15px;
@@ -1278,6 +1362,14 @@ footer {
     border-color: red;
     border: 2px;
     height: 60vh;
+    margin-bottom: 10px;
+  }
+  .explore-section{
+    padding-bottom: 0px;
+  }
+  .show-more-btn{
+    font-size: 1rem;
+    margin-top: 0px;
   }
 
   .Banner img {
@@ -1285,7 +1377,7 @@ footer {
   }
 
   .banner-heading {
-    top: 40%;
+    top: 20%;
   }
 
   .banner-heading h3 {
@@ -1293,16 +1385,31 @@ footer {
   }
 
   .banner-subheading {
-    top: 50%;
+    top: 30%;
   }
 
   .banner-subheading p {
     font-size: 1.2vw;
   }
-
+  .destination-grid{
+    gap:30px 70px;
+  }
+  .card-content h3{
+    font-size: 1rem;
+  }
+  .location{
+    font-size: 0.8rem;
+  }
+  .price{
+    font-size: 0.9rem;
+  }
   .search-card{
-    bottom:-60px;
-    gap:5px;
+    border: 1px solid red;
+    bottom:50px;
+    /* gap:5px; */
+    padding: 8px;
+    border-radius: 10px;
+
   }
   .field span {
     font-size: 1rem;
@@ -1310,19 +1417,31 @@ footer {
 
   .field select,
   .field input {
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 0.9rem;
   }
+  .field input {
+    padding: 10px 10px;
+    font-size: 0.9rem;
+    /* margin-left: -20px; */
+    gap: 10px;
+}
 
   .search-btn {
-    padding: 5px;
+    padding: 10px;
     font-size: 0.9rem;
-    width: 10%;
+    width: 15%;
     margin-bottom: 5px;
+    /* align-self: end; */
+    margin-left: auto;
+    margin-right: 15px;
   }
-
+  .search-btn button{
+    font-size: 1rem;
+  }
+  
   .tabs span {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .tabs-search {
@@ -1332,15 +1451,22 @@ footer {
   .search-fields {
     gap: 0px;
     justify-content: start;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    /* width: fit-content; */
   }
 
   .field {
     flex-direction: column;
     /* padding: 0px;  */
   }
-
+  .image-container{
+    width: 300px;
+  }
   .tabs {
-    gap: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    gap: 30px;
     justify-content: center;
   }
    .description{
@@ -1350,16 +1476,32 @@ footer {
    .header-container{
     display: block;
    }
+   .place-card{
+    padding: 7px;
+    align-items: center;
+    text-align: start;
+   }
+   .place-card h3{
+    margin-top: 2px;
+    font-size: 1rem;
+   }
+   .place-card p{
+    font-size: 0.8rem;
+   }
    .popular-places{
     text-align: center;
-
+    margin-top: 0px;
    }
    .discription{
     margin: 0;
     margin-left:30px;
+    margin-bottom: 20px;
    }
    .places-container{
     justify-content: center;
+   }
+   .header{
+    margin-top: 10px;
    }
    .header_1{
     margin-top: 50px;
@@ -1395,6 +1537,9 @@ footer {
    .stamp-container{
     margin-bottom: 50px;
    }
+   .show-more{
+    margin: 0;
+   }
    .booking-title {
     font-size: 2rem;
     font-weight: 500;
@@ -1406,32 +1551,40 @@ footer {
    .filter-icon{
     font-size: 0.9rem;
    }
+   .footer-section{
+    min-width: 150px;
+   }
 
 }
-@media (max-width: 480px){
+@media (max-width: 425px){
   .Banner{
     margin:0px;
     justify-content: start;
     align-items: start;
+  }
+  .Banner img{
+    height: 250px;
   }
   .tabss{
     display: none;
   }
   .field{
     padding: 0px 8px;
+    width: 80%;
   }
   .search-fields{
-    display: block;
+    /* display: block; */
   }
   .search-btn {
-    padding: 12px;
-
+    padding: 8px;
     cursor: pointer;
     font-size: 0.9rem;
     width: 30%;
-    margin-bottom: 10px;
     margin-left: 10px;
     margin-top: 10px;
+  }
+  .search-btn button{
+    font-size: 0.9rem;
   }
   .header{
     margin-top:20px;
@@ -1480,5 +1633,225 @@ footer {
   .show-more-btn{
 
   }
-  
+  .search-card{
+    gap: 0px;
+    border-radius: 10px;
+    width: 61%;
+    bottom: -30px;
+    /* flex-direction: column; */
+    flex-wrap: nowrap;
+  }
+  /* .field{
+    max-width: 180px;
+  } */
+  .field select, .field input {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    padding: 10px 2px;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .field span{
+    font-size: 0.8rem;
+  }
+  .footer-section {
+    padding: 0px;
+  }
+  .footer-icons img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer-icons {
+    margin-top: 8px;
+    visibility: hidden;
+  }
+  .footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 5px;
+  }
+  .newsletter-form{
+    width: 70%;
+  }
+  .header_1 h1 {
+    font-size: 1.4rem;
+  }
+  .header_1 p {
+    font-size: 0.9rem;
+  }
+  .stamp-cards img {
+    height: 150px;
+  }
+  .banner-heading h3 {
+    font-size: 20px;
+  }
+  .show-more{
+    padding: 5px;
+    font-size: 1rem;
+  }
+  .navbar{
+    margin-top: 0px;
+  }
+  .banner-subheading p{
+    font-size: 0.5rem;
+  }
+  .stamp-container{
+    margin-top: 30px;
+  }
+  .description{
+    font-size: 11px;
+  }
+  .filter {
+    padding: 8% 8px;
+    font-size: 14px;
 }
+.field select {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  padding: 10px 2px;
+  font-size: 0.9rem;
+  width: 102%;
+}
+
+}
+@media (max-width:375px){
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  .body{
+    /* max-width: 320px; */
+    overflow-x: auto;
+  }
+  .container{
+    margin: 5px;
+    box-sizing: border-box;
+    max-width: 100vw;
+    /* outline: 1px solid red; */
+   
+  }
+  .newsletter-form input{
+    padding: 0px;
+  }
+  /* .review{
+    visibility: hidden;
+  } */
+  .imagecontainer img{
+    width: 250px;
+    height: 400px;
+  }
+  .imagecontainer{
+    width: 250px;
+    justify-content: center;
+  }
+  .review img {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 8px; 
+  }
+  .review1{
+    left:-30px;
+    font-size: 0.6rem;
+  }
+  .review2{
+    font-size: 0.6rem;
+  }
+  .review3{
+    left:-30px ;
+    font-size: 0.6rem;
+  }
+  .banner-subheading p {
+    font-size: 0.5rem;
+  } 
+  .search-fields{
+    flex-direction: column;
+  }
+  .input-div{
+    width: 96%;
+  } 
+
+  input{
+    width:96%
+  }
+  /* .field input{
+    margin-left: 0px;
+  } */
+  .search-btn{
+    align-self: start;
+
+  }
+  .search-btn button{
+    font-size: 0.7rem;
+  }
+  .booking-title {
+    font-size: 1.2rem;
+  }
+  .book-btn {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+
+  .footer-section {
+    padding: 0px;
+  }
+  .footer-icons img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer-icons {
+    margin-top: 8px;
+    visibility: hidden;
+  }
+  .footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 5px;
+  }
+  .newsletter-form{
+    width: 70%;
+  }
+  .header_1 h1 {
+    font-size: 1.4rem;
+  }
+  .header_1 p {
+    font-size: 0.9rem;
+  }
+  .stamp-cards img {
+    height: 150px;
+  }
+  .banner-heading h3 {
+    font-size: 20px;
+  }
+  .search-fields{
+    align-items: start;
+  }
+  .field select{
+    width: 96%;
+  }
+}
+@media (max-width:320px){
+  .banner-subheading{
+    visibility: hidden;
+  }
+  .filter{
+    padding-block:10px ;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
